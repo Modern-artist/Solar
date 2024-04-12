@@ -7,8 +7,8 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
+import benefitOneImg from "../public/img/home.svg";
+import benefitTwoImg from "../public/img/check.svg";
 
 const benefitOne = {
   title: "Highlight your benefits",
@@ -16,18 +16,18 @@ const benefitOne = {
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Preliminary Design",
+      desc: "Ignite your project's potential with our visionary preliminary design services, sculpting the blueprint for your future success from the ground up.",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Permit Design",
+      desc: "Breakthrough regulatory barriers with our precision-crafted permit design solutions, paving the way for seamless approval and rapid progress.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Engineering Stamping",
+      desc: "Elevate your project with the mark of excellence through our meticulous engineering stamping services, setting the standard for quality and compliance.",
       icon: <CursorArrowRaysIcon />,
     },
   ],
@@ -39,18 +39,18 @@ const benefitTwo = {
   image: benefitTwoImg,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: "Interconnection Support(PTO)",
+      desc: "Power up your project's connectivity with our dynamic interconnection support, forging pathways to integration and efficiency like never before.",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: "Permitting Application Assistance",
+      desc: "Unleash the full potential of your project with our expert guidance through the permitting labyrinth, ensuring smooth sailing toward regulatory approval.",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      title: "Ongoing Support Project Lifecycle",
+      desc: "Lifecycle: Experience unparalleled peace of mind with our steadfast support throughout your project's journey, providing a steady hand and innovative solutions at every turn.",
       icon: <SunIcon />,
     },
   ],
