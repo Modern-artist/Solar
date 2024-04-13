@@ -1,16 +1,19 @@
 import React from 'react'
 import aboutImg from "../public/img/Solar.svg";
 import Image from 'next/image';
+import Container from "./container";
+
 
 const About = () => {
   return (
-          <div className="flex flex-wrap p-16">
+      <Container className="flex flex-wrap py-16 sm:py-32">
+      {/* <div className="flex flex-wrap p-16"> */}
               <div className="flex items-center w-full lg:w-1/2">
                   <div className="max-w-2xl mb-8">
-                      <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white">
+                      <h1 className="text-4xl   leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
                       About Dunamis Solar.Energy
                       </h1>
-                      <p className="py-5  leading-normal text-gray-500  dark:text-gray-300">
+                      <p className="py-5  leading-normal text-gray-500 ">
                       We're Dunamis Solar.Energy - the go-to solar permitting company for installers all across the
                       USA. Our mission? To make solar installation smoother, easier, and faster for everyone
                       involved.
@@ -34,14 +37,14 @@ const About = () => {
                               href="https://web3templates.com/templates/nextly-landing-page-template-for-startups"
                               target="_blank"
                               rel="noopener"
-                              className="px-8 py-4 text-lg font-medium text-center text-white bg-indigo-600 rounded-md ">
+                              className="px-8 py-4 text-lg font-medium text-center text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-md ">
                               Download for Free
                           </a>
                           <a
                               href="https://github.com/web3templates/nextly-template/"
                               target="_blank"
                               rel="noopener"
-                              className="flex items-center space-x-2 text-gray-500 dark:text-gray-400">
+                              className="flex items-center space-x-2 text-gray-500     text-gray-400">
                               <svg
                                   role="img"
                                   width="24"
@@ -72,7 +75,8 @@ const About = () => {
                       />
                   </div>
               </div>
-          </div>
+          {/* </div> */}
+      </Container>
   )
 }
 

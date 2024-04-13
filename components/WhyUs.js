@@ -1,14 +1,18 @@
 import React from 'react'
 import WhyCard from './WhyCard';
+import Container from './container';
 
 const WhyUs = () => {
   return (
-      <div className='grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 xl:grid-cols-4 gap-6 p-6 sm:gap-8 sm:p-8'>
+    // <Container
+      <Container className="flex flex-wrap ">
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-8 lg:grid-cols-3 xl:grid-cols-4 '>
           {reasons?.map((reason) => (
             <WhyCard reason={reason} key={reason.id} />
             //   < key={reason?.id} product={reason} />
           ))}
       </div>
+      </Container>
   )
 }
 
