@@ -1,8 +1,10 @@
 import Link from "next/link";
+import { Link as Links } from "react-scroll";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
 import { Disclosure } from "@headlessui/react";
-
+import { scroller } from "react-scroll";
+import { useEffect } from "react";
 const Navbar = () => {
   const navigation = [
     // "Product",
@@ -12,6 +14,14 @@ const Navbar = () => {
     "Testimonials",
     "FAQ",
   ];
+  const scrollToASection = (sectionName) => {
+    scroller.scrollTo(`${sectionName}`, {
+      delay: 50,
+      duration: 1500,
+      smooth: "easeInOutQuint",
+    });
+  }
+
 
   return (
     <div className="w-full">
@@ -24,13 +34,13 @@ const Navbar = () => {
                 <Link href="/">
                   <span className="flex items-center space-x-2 font-medium text-amber-500">
                     <span>
-                      {/* <Image
+                      <Image
                         src="/img/logo.svg"
                         alt="N"
                         width="32"
                         height="32"
                         className="w-8"
-                      /> */}
+                      />
                     </span>
                     <span className="text-2xl font-bold text-black">Dunamis</span>
                   </span>
@@ -59,15 +69,20 @@ const Navbar = () => {
                   </svg>
                 </Disclosure.Button>
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+                <Disclosure.Panel className="flex flex-col w-full my-5 lg:hidden">
                   <>
-                    {navigation.map((item, index) => (
-                      <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md    hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100     focus:outline-none">
-                          {item}
-                      </Link>
+                    {navigation.map((menu, index) => (
+                      <div className="px-2" key={index}>
+                          <div
+                            onClick={() => scrollToASection(menu.split(" ")[0].toLowerCase())}
+                          className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md    hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100     focus:outline-none">
+                            {menu}
+                          </div>
+                      </div>
+                      
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-md lg:ml-5">         
-                        Get Started
+                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-md lg:ml-5">
+                      Get Started
                     </Link>
                   </>
                 </Disclosure.Panel>
@@ -81,9 +96,15 @@ const Navbar = () => {
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
-                <Link href="/" className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-50 focus:outline-none ">
-                    {menu}
-                </Link>
+
+                <div
+                  onClick={() => scrollToASection(menu.split(" ")[0].toLowerCase())}
+                  // onClick={()=>scrollToTargetDiv("services")}  
+                  className="cursor-pointer inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-50 focus:outline-none ">
+                  {menu}
+                </div>
+
+
               </li>
             ))}
           </ul>
@@ -91,7 +112,7 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <Link href="/" className="px-6 py-2 text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-md md:ml-5">
-              Get Started
+            Get Started
           </Link>
 
           {/* <ThemeChanger /> */}

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
-
+import { scroller } from "react-scroll";
 import { benefitOne, benefitTwo } from "../components/data";
 import Video from "../components/video";
 import Benefits from "../components/benefits";
@@ -13,52 +13,70 @@ import Faq from "../components/faq";
 import PopupWidget from "../components/popupWidget";
 import WhyUs from "../components/WhyUs";
 import About from "../components/About";
+import { useEffect } from "react";
+import AOS from 'aos'; import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <Head>
-        <title>Nextly - Free Nextjs & TailwindCSS Landing Page Template</title>
+        <title>Dunamis Solar</title>
         <meta
           name="description"
-          content="Nextly is a free landing page template built with next.js & Tailwind CSS"
+          content="Simplifying your life
+and expediting project outcomes affordably and efficiently"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Navbar />
-      <Hero />
-      <SectionTitle
-        pretitle="Our Services"
-        title="Why should you use this landing page">
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
-      </SectionTitle>
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
-      <About />
+      <div className="" data-aos="fade-up"><Hero data-aos="fade-up"/></div>
+      
+      <div name="services" data-aos="fade-up">
+        <div className="">
+          <SectionTitle
+            pretitle="Our Services"
+            title="Why should you trust us?">
+            At Dunamis, we prioritize trust and quality. With our experienced team and transparent pricing, we deliver reliable solar solutions tailored to your needs. Choose us for a trustworthy  experience.
+          </SectionTitle>
+        </div>
+        <Benefits data={benefitOne}/>
+        <Benefits imgPos="right" data={benefitTwo} />
+      </div>
+      <div name="about" data-aos="fade-up">
+        <About />
 
-      <SectionTitle
-        pretitle="Why us"
-        title="Why We're Your Choice">
-        At Dunamis Solar.Energy, we pride ourselves on being the premier choice for streamlined
-        solar project development. Here's why clients trust us.
-      </SectionTitle>
-      <WhyUs/>
+    </div>
+      <div name="why" data-aos="fade-up">
+        <SectionTitle
+          pretitle="Why us"
+          title="Why We're Your Choice">
+          At Dunamis    Solar Energy, we pride ourselves on being the premier choice for streamlined
+          solar project development. Here's why clients trust us.
+        </SectionTitle>
+        <WhyUs />
+    </div>
+
       {/* <Video /> */}
-      <SectionTitle
-        pretitle="Testimonials"
-        title="Here's what our customers said">
-        Testimonails is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
-      </SectionTitle>
-      <Testimonials />
-      <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
-      <Faq />
+      <div name="testimonials" data-aos="fade-up">
+        <SectionTitle
+          pretitle="Testimonials"
+          title="Here's what our customers said">
+         Discover the positive experiences shared by our satisfied clients about our reliable and efficient solar services"
+        </SectionTitle>
+        <Testimonials />
+
+      </div>
+      <div name="faq" data-aos="fade-up">
+        <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
+          Comprehensive answers to address your concerns and queries about our services, installation process, maintenance, and environmental benefits.
+        </SectionTitle>
+        <Faq />
+    </div>
+
       {/* <Cta /> */}
       <Footer />
       <PopupWidget />

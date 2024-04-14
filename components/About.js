@@ -11,10 +11,10 @@ const About = () => {
               <div className="flex items-center w-full lg:w-1/2">
                   <div className="max-w-2xl mb-8">
                       <h1 className="text-4xl   leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
-                      About Dunamis Solar.Energy
+                      About Dunamis Solar Energy
                       </h1>
                       <p className="py-5  leading-normal text-gray-500 ">
-                      We're Dunamis Solar.Energy - the go-to solar permitting company for installers all across the
+                      We're Dunamis    Solar Energy - the go-to solar permitting company for installers all across the
                       USA. Our mission? To make solar installation smoother, easier, and faster for everyone
                       involved.
                       <br />

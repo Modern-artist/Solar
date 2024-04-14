@@ -20,7 +20,7 @@ const reasons = [
     {
         id: 1,
         title: "Top-Level Experienced Designers",
-        description: "When you choose Dunamis Solar.Energy, you're tapping into the expertise of top-level experienced designers.Our team brings years of industry experience and innovative thinking to every project, guaranteeing exceptional results."
+        description: "When you choose Dunamis    Solar Energy, you're tapping into the expertise of top-level experienced designers.Our team brings years of industry experience and innovative thinking to every project, guaranteeing exceptional results."
     },
     {
         id: 2,
