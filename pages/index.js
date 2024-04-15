@@ -33,8 +33,8 @@ and expediting project outcomes affordably and efficiently"
       </Head>
 
       <Navbar />
-      <div className="" data-aos="fade-up"><Hero data-aos="fade-up"/></div>
-      
+      <div className="" data-aos="fade-up"><Hero data-aos="fade-up" /></div>
+
       <div name="services" data-aos="fade-up">
         <div className="">
           <SectionTitle
@@ -43,29 +43,29 @@ and expediting project outcomes affordably and efficiently"
             At Dunamis, we prioritize trust and quality. With our experienced team and transparent pricing, we deliver reliable solar solutions tailored to your needs. Choose us for a trustworthy  experience.
           </SectionTitle>
         </div>
-        <Benefits data={benefitOne}/>
+        <Benefits data={benefitOne} />
         <Benefits imgPos="right" data={benefitTwo} />
       </div>
       <div name="about" data-aos="fade-up">
         <About />
 
-    </div>
+      </div>
       <div name="why" data-aos="fade-up">
         <SectionTitle
           pretitle="Why us"
           title="Why We're Your Choice">
-          At Dunamis    Solar Energy, we pride ourselves on being the premier choice for streamlined
+          At Dunamis Solar Energy, we pride ourselves on being the premier choice for streamlined
           solar project development. Here's why clients trust us.
         </SectionTitle>
         <WhyUs />
-    </div>
+      </div>
 
       {/* <Video /> */}
       <div name="testimonials" data-aos="fade-up">
         <SectionTitle
           pretitle="Testimonials"
           title="Here's what our customers said">
-         Discover the positive experiences shared by our satisfied clients about our reliable and efficient solar services"
+          Discover the positive experiences shared by our satisfied clients about our reliable and efficient solar services"
         </SectionTitle>
         <Testimonials />
 
@@ -75,7 +75,7 @@ and expediting project outcomes affordably and efficiently"
           Comprehensive answers to address your concerns and queries about our services, installation process, maintenance, and environmental benefits.
         </SectionTitle>
         <Faq />
-    </div>
+      </div>
 
       {/* <Cta /> */}
       <Footer />

@@ -42,13 +42,13 @@ const Navbar = () => {
                         className="w-8"
                       />
                     </span>
-                    <span className="text-2xl font-bold text-black">Dunamis</span>
+                    <span className="text-2xl font-bold text-white">Dunamis</span>
                   </span>
                 </Link>
 
                 <Disclosure.Button
                   aria-label="Toggle Menu"
-                  className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-amber-500 focus:text-amber-500 focus:bg-amber-50 focus:outline-none     ">
+                  className="px-2 py-1 ml-auto text-gray-400 rounded-md lg:hidden hover:text-amber-500 focus:text-amber-500 focus:bg-amber-50 focus:outline-none     ">
                   <svg
                     className="w-6 h-6 fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ const Navbar = () => {
                       <div className="px-2" key={index}>
                           <div
                             onClick={() => scrollToASection(menu.split(" ")[0].toLowerCase())}
-                          className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md    hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100     focus:outline-none">
+                          className="w-full px-4 py-2 -ml-4 text-gray-400 rounded-md    hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100     focus:outline-none">
                             {menu}
                           </div>
                       </div>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 <div
                   onClick={() => scrollToASection(menu.split(" ")[0].toLowerCase())}
                   // onClick={()=>scrollToTargetDiv("services")}  
-                  className="cursor-pointer inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-50 focus:outline-none ">
+                  className="cursor-pointer inline-block px-4 py-2 text-lg font-normal text-gray-100 no-underline rounded-md  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-50 focus:outline-none ">
                   {menu}
                 </div>
 

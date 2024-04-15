@@ -8,10 +8,10 @@ const Hero = () => {
       <Container className="flex flex-wrap py-16 sm:py-32">
         <div className="flex  w-full lg:w-1/2">
           <div className="max-w-2xl mb-8 md:mt-4">
-            <h1 className="text-4xl  leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
+            <h1 className="text-4xl  leading-snug tracking-tight text-gray-100 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
              Dunamis Solar, get your solar permit hassle-free.
             </h1>
-            <p className="py-5  font-thin leading-normal text-gray-500    ">
+            <p className="py-5  font-thin leading-normal text-gray-400    ">
               Allow us to navigate the intricate details of your solar permit package, simplifying your life
               and expediting project outcomes affordably and efficiently.
             </p>

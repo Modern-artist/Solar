@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         trueGray: colors.neutral,
+        'backGround': '#16162c',
       },
     },
     fontFamily: {

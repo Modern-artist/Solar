@@ -33,7 +33,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            <div className="max-w-md mt-4 text-gray-500    ">
+            <div className="max-w-md mt-4 text-gray-400    ">
               Your Secret Weapon for Solar Success, Offering Effortless Design and Unmatched Support.
             </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
-                <div key={index} onClick={() => scrollToASection(item.split(" ")[0].toLowerCase())} className="w-full px-4 py-2 text-gray-500 rounded-md  cursor-pointer  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">                 
+                <div key={index} onClick={() => scrollToASection(item.split(" ")[0].toLowerCase())} className="w-full px-4 py-2 text-gray-400 rounded-md  cursor-pointer  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">                 
                     {item}
                 </div>
               ))}
@@ -65,15 +65,15 @@ export default function Footer() {
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {legal.map((item, index) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">      
+                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">      
                     {item}
                 </Link>
               ))}
             </div>
           </div>
-          <div className="">
-            <div>Follow us</div>
-            <div className="flex mt-5 space-x-5 text-gray-400">
+          <div className="text-gray-400" >
+            <div  >Follow us</div>
+            <div className="flex mt-5 space-x-5 ">
               <a
                 href="https://twitter.com/"
                 target="_blank"

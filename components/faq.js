@@ -12,7 +12,7 @@ const Faq = () => {
             <Disclosure>
               {({ open }) => (
                 <>
-                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left rounded-lg focus:outline-none focus-visible:ring text-gray-500 focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 bg-slate-50">
+                  <Disclosure.Button className="flex items-center justify-between w-full px-4 py-4 text-lg text-left rounded-lg focus:outline-none focus-visible:ring text-gray-400 focus-visible:ring-indigo-100 focus-visible:ring-opacity-75 bg-slate-800/40">
                     <span>{item.question}</span>
                     <ChevronUpIcon
                       className={`${
@@ -20,7 +20,7 @@ const Faq = () => {
                       } w-5 h-5 text-amber-500`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500">
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-400">
                     {item.answer}
                   </Disclosure.Panel>
                 </>
