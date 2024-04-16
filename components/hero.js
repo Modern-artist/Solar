@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className="text-4xl  leading-snug tracking-tight text-gray-100 lg:text-4xl lg:leading-tight xl:text-5xl xl:leading-tight">
              Dunamis Solar, get your solar permit hassle-free.
             </h1>
-            <p className="py-5  font-thin leading-normal text-gray-400    ">
+            <p className="py-5 leading-normal text-lg text-gray-400">
               Allow us to navigate the intricate details of your solar permit package, simplifying your life
               and expediting project outcomes affordably and efficiently.
             </p>

@@ -20,7 +20,8 @@ export default function Footer() {
     });
   }
 
-  const legal = ["Terms", "Privacy", "Legal"];
+  const legal = ["Service", "Solar Proposal", "Solar Site Survey", "Solar Permit Design", "Stamping Service", "Solar Permit (AHJ Permission)","EV Permit design"];
+  const project = ["Projects", "USA Residential Projects", "USA Commercial Projects"];
   return (
     <div className="relative">
       <Container>
@@ -35,6 +36,39 @@ export default function Footer() {
 
             <div className="max-w-md mt-4 text-gray-400    ">
               Your Secret Weapon for Solar Success, Offering Effortless Design and Unmatched Support.
+            </div>
+            <div className="mt-4 text-gray-400" >
+              <div className="mt-4 text-gray-100" >Follow us</div>
+              <div className="flex mt-5 space-x-5 ">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener">
+                  <span className="sr-only">Twitter</span>
+                  <Twitter />
+                </a>
+                <a
+                  href="https://facebook.com/"
+                  target="_blank"
+                  rel="noopener">
+                  <span className="sr-only">Facebook</span>
+                  <Facebook />
+                </a>
+                <a
+                  href="https://instagram.com/"
+                  target="_blank"
+                  rel="noopener">
+                  <span className="sr-only">Instagram</span>
+                  <Instagram />
+                </a>
+                <a
+                  href="https://linkedin.com/"
+                  target="_blank"
+                  rel="noopener">
+                  <span className="sr-only">Linkedin</span>
+                  <Linkedin />
+                </a>
+              </div>
             </div>
 
             {/* <div className="mt-5">
@@ -71,7 +105,16 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="text-gray-400" >
+          <div>
+            <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+              {project.map((item, index) => (
+                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">
+                  {item}
+                </Link>
+              ))}
+            </div>
+          </div>
+          {/* <div className="text-gray-400" >
             <div  >Follow us</div>
             <div className="flex mt-5 space-x-5 ">
               <a
@@ -103,7 +146,7 @@ export default function Footer() {
                 <Linkedin />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="my-10 text-sm text-center text-gray-600">
           Copyright © {new Date().getFullYear()} Dunamis.

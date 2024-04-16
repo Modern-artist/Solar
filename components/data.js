@@ -16,8 +16,8 @@ const benefitOne = {
   image: benefitOneImg,
   bullets: [
     {
-      title: "Preliminary Design",
-      desc: "Ignite your project's potential with our visionary preliminary design services, sculpting the blueprint for your future success from the ground up.",
+      title: "Sales Proposal & Preliminary Design",
+      desc: "Using modern tools such as Aurora and Helioscope, we create precise and engaging sales proposals to help you win more projects. With our imaginative preliminary design services, you can unleash the full potential of your project, laying the groundwork for future success from the start.",
       icon: <FaceSmileIcon />,
     },
     {
