@@ -61,7 +61,7 @@ and expediting project outcomes affordably and efficiently"
       </div>
 
       {/* <Video /> */}
-      <div name="testimonials" data-aos="fade-up">
+      {/* <div name="testimonials" data-aos="fade-up">
         <SectionTitle
           pretitle="Testimonials"
           title="Here's what our customers said">
@@ -69,7 +69,7 @@ and expediting project outcomes affordably and efficiently"
         </SectionTitle>
         <Testimonials />
 
-      </div>
+      </div> */}
       <div name="faq" data-aos="fade-up">
         <SectionTitle pretitle="FAQ" title="Frequently Asked Questions">
           Comprehensive answers to address your concerns and queries about our services, installation process, maintenance, and environmental benefits.

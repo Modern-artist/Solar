@@ -20,8 +20,8 @@ export default function Footer() {
     });
   }
 
-  const legal = ["Service", "Solar Proposal", "Solar Site Survey", "Solar Permit Design", "Stamping Service", "Solar Permit (AHJ Permission)","EV Permit design"];
-  const project = ["Projects", "USA Residential Projects", "USA Commercial Projects"];
+  const legal = ["Solar Proposal", "Solar Site Survey", "Solar Permit Design", "Stamping Service", "Solar Permit (AHJ Permission)","EV Permit design"];
+  const project = ["USA Residential Projects", "USA Commercial Projects"];
   return (
     <div className="relative">
       <Container>
@@ -38,36 +38,10 @@ export default function Footer() {
               Your Secret Weapon for Solar Success, Offering Effortless Design and Unmatched Support.
             </div>
             <div className="mt-4 text-gray-400" >
-              <div className="mt-4 text-gray-100" >Follow us</div>
-              <div className="flex mt-5 space-x-5 ">
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Twitter</span>
-                  <Twitter />
-                </a>
-                <a
-                  href="https://facebook.com/"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Facebook</span>
-                  <Facebook />
-                </a>
-                <a
-                  href="https://instagram.com/"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Instagram</span>
-                  <Instagram />
-                </a>
-                <a
-                  href="https://linkedin.com/"
-                  target="_blank"
-                  rel="noopener">
-                  <span className="sr-only">Linkedin</span>
-                  <Linkedin />
-                </a>
+              <div className="mt-4 mb-1 text-gray-100" >Contact us</div>
+              <div className="flex gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                Dunamis@gmail.com
               </div>
             </div>
 
@@ -89,6 +63,8 @@ export default function Footer() {
 
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+              <div className="text-gray-100 px-4 py-2" >Explore Dunamis</div>
+
               {navigation.map((item, index) => (
                 <div key={index} onClick={() => scrollToASection(item.split(" ")[0].toLowerCase())} className="w-full px-4 py-2 text-gray-400 rounded-md  cursor-pointer  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">                 
                     {item}
@@ -98,6 +74,7 @@ export default function Footer() {
           </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+              <div className="text-gray-100 px-4 py-2" >Contact us</div>
               {legal.map((item, index) => (
                 <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">      
                     {item}
@@ -107,6 +84,7 @@ export default function Footer() {
           </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
+              <div className="text-gray-100 px-4 py-2" >Projects</div>
               {project.map((item, index) => (
                 <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">
                   {item}
