@@ -15,6 +15,7 @@ import WhyUs from "../components/WhyUs";
 import About from "../components/About";
 import { useEffect } from "react";
 import AOS from 'aos'; import 'aos/dist/aos.css';
+import Whatsapp from "../components/Whatsapp";
 
 const Home = () => {
   useEffect(() => {
@@ -23,7 +24,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Dunamis Solar</title>
+        <title>Dunamis Solar Energy</title>
         <meta
           name="description"
           content="Simplifying your life
@@ -31,7 +32,6 @@ and expediting project outcomes affordably and efficiently"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Navbar />
       <div className="" data-aos="fade-up"><Hero data-aos="fade-up" /></div>
 
@@ -79,7 +79,9 @@ and expediting project outcomes affordably and efficiently"
 
       {/* <Cta /> */}
       <Footer />
-      <PopupWidget />
+      <Whatsapp />
+
+      {/* <PopupWidget /> */}
     </>
   );
 }

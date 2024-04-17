@@ -30,18 +30,22 @@ export default function Footer() {
             <div>
               {" "}
               <Link href="/" className="flex items-center space-x-2 text-2xl font-medium text-amber-500">
-                <span>Dunamis</span>
+                <span>Dunamis Solar Energy</span>
               </Link>
             </div>
 
             <div className="max-w-md mt-4 text-gray-400    ">
               Your Secret Weapon for Solar Success, Offering Effortless Design and Unmatched Support.
             </div>
-            <div className="mt-4 text-gray-400" >
+            <div className="mt-4 text-gray-400 " >
               <div className="mt-4 mb-1 text-gray-100" >Contact us</div>
               <div className="flex gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
-                Dunamis@gmail.com
+                hello@dunamissolar.energy
+              </div>
+              <div className="flex gap-2 mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-call"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /><path d="M14.05 2a9 9 0 0 1 8 7.94" /><path d="M14.05 6A5 5 0 0 1 18 10" /></svg>
+                +1 832 699 0367
               </div>
             </div>
 
@@ -66,7 +70,7 @@ export default function Footer() {
               <div className="text-gray-100 px-4 py-2" >Explore Dunamis</div>
 
               {navigation.map((item, index) => (
-                <div key={index} onClick={() => scrollToASection(item.split(" ")[0].toLowerCase())} className="w-full px-4 py-2 text-gray-400 rounded-md  cursor-pointer  hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">                 
+                <div key={index} onClick={() => scrollToASection(item.split(" ")[0].toLowerCase())} className="w-full px-4 py-2 text-gray-400 rounded-md  cursor-pointer  hover:text-amber-500 focus:text-amber-500   focus:outline-none    ">                 
                     {item}
                 </div>
               ))}
@@ -74,9 +78,9 @@ export default function Footer() {
           </div>
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
-              <div className="text-gray-100 px-4 py-2" >Contact us</div>
+              <div className="text-gray-100 px-4 py-2" >Services</div>
               {legal.map((item, index) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">      
+                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500   focus:outline-none    ">      
                     {item}
                 </Link>
               ))}
@@ -86,7 +90,7 @@ export default function Footer() {
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               <div className="text-gray-100 px-4 py-2" >Projects</div>
               {project.map((item, index) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500 focus:bg-amber-100 focus:outline-none    ">
+                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-400 rounded-md hover:text-amber-500 focus:text-amber-500   focus:outline-none    ">
                   {item}
                 </Link>
               ))}
